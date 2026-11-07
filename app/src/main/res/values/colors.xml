@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="brand_start">#C2410C</color>
+    <color name="brand_end">#7C2D12</color>
+    <color name="brand_soft">#FDBA74</color>
+    <color name="on_brand">#FFFFFF</color>
+    <color name="background_top">#1E130D</color>
+    <color name="background_bottom">#0C0806</color>
+    <color name="surface">#1A120D</color>
+    <color name="surface_high">#2A1D15</color>
+    <color name="outline">#46311F</color>
+    <color name="text_primary">#FBF4EF</color>
+    <color name="text_secondary">#C2B2A6</color>
+    <color name="ripple">#33FFFFFF</color>
+    <color name="level_risk">#FB7185</color>
+    <color name="level_review">#FBBF24</color>
+    <color name="level_ok">#4ADE80</color>
+</resources>

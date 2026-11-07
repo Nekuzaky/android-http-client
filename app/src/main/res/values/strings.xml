@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ReqLab</string>
+    <string name="back">Back</string>
+    <string name="info">About</string>
+    <string name="close">Close</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="clear">Clear</string>
+    <string name="save">Save</string>
+    <string name="saved">Saved</string>
+    <string name="send">Send</string>
+    <string name="add">+ Add</string>
+    <string name="copy">Copy</string>
+    <string name="copied">Copied</string>
+    <string name="copy_failed">Could not copy</string>
+    <string name="copy_too_large">Too large to copy</string>
+    <string name="copy_cut">Only the first 256,000 characters were copied</string>
+    <string name="nothing_to_copy">Nothing to copy</string>
+    <string name="remove_row">Remove row</string>
+    <string name="too_many_rows">Row limit reached</string>
+    <string name="input_too_large">That text is too large for this field, so none of it was pasted</string>
+    <string name="info_message">ReqLab sends the HTTP requests you write to the servers you choose, including servers on your LAN.\n\nOnly http and https are allowed. TLS certificates are always validated and there is no way to turn that off, so self-signed certificates are refused.\n\nSaved requests, environments and the working draft are encrypted on this phone with a key held in Android Keystore. History is encrypted the same way and never stores bodies, auth values, or Authorization and Cookie headers.\n\nResponses are shown as plain text, never as a web page, and bodies are cut at 2 MiB.\n\nScreenshots and the Recents preview are blocked on every screen because requests and responses can hold secrets.\n\nThere are no ads, analytics, accounts or logs.</string>
+
+    <string name="tab_request">Request</string>
+    <string name="tab_response">Response</string>
+    <string name="tab_saved">Saved</string>
+    <string name="tab_history">History</string>
+    <string name="tab_env">Env</string>
+
+    <string name="status_request">Write a request</string>
+    <string name="status_running">A request is being sent</string>
+    <string name="status_response_idle">No response yet</string>
+    <string name="status_sending">Sending %1$s %2$s</string>
+    <string name="status_failed">Request failed</string>
+    <string name="status_cancelled">Request cancelled</string>
+    <string name="status_deadline">Stopped: the server took too long or sent too many headers</string>
+    <string name="already_sending">A request is already being sent</string>
+
+    <string name="method">Method</string>
+    <string name="url_hint">http://192.168.1.10:8000/api or {{base_url}}/api</string>
+    <string name="section_params">Query params</string>
+    <string name="param_name">name</string>
+    <string name="param_value">value</string>
+    <string name="section_request_headers">Headers</string>
+    <string name="header_name">Header-Name</string>
+    <string name="header_value">value</string>
+    <string name="section_auth">Auth</string>
+    <string name="auth_none">None</string>
+    <string name="auth_bearer">Bearer</string>
+    <string name="auth_basic">Basic</string>
+    <string name="token_hint">Bearer token</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="section_request_body">Body</string>
+    <string name="body_raw">Raw</string>
+    <string name="body_type_json">JSON</string>
+    <string name="body_type_form">Form</string>
+    <string name="body_raw_hint">Request body</string>
+    <string name="body_json_hint">{\n  \"name\": \"value\"\n}</string>
+    <string name="field_name">field</string>
+    <string name="field_value">value</string>
+    <string name="follow_redirects">Follow redirects</string>
+    <string name="preview">Preview</string>
+    <string name="curl">curl</string>
+    <string name="cancel_request">Cancel</string>
+    <string name="new_request">New request</string>
+    <string name="new_title">Start a new request?</string>
+    <string name="new_message">The fields on this screen are cleared. Saved requests are kept.</string>
+
+    <string name="cannot_send">Request refused</string>
+    <string name="preview_title">Preview before sending</string>
+    <string name="curl_title">curl command</string>
+    <string name="curl_no_location">--location is left out: curl would send your custom headers to any host a redirect points at.</string>
+    <string name="curl_unavailable">The body contains a NUL character, which a shell argument cannot hold.</string>
+    <string name="copy_with_secrets">Copy with secrets</string>
+    <string name="copy_masked">Copy masked</string>
+
+    <string name="save_title">Save request</string>
+    <string name="save_name_hint">Name</string>
+    <string name="save_collection_hint">Collection (optional)</string>
+    <string name="save_bad_name">Enter a name</string>
+    <string name="save_seal_failed">Not saved: the Keystore could not encrypt it</string>
+    <string name="save_full">Not saved: storage limit reached</string>
+    <string name="save_write_failed">Could not write to storage</string>
+    <string name="saved_empty">Saved requests appear here, grouped by collection.\nTap to load. Long press to delete.</string>
+    <string name="saved_unreadable">This saved request cannot be decrypted</string>
+    <string name="saved_delete_title">Delete this saved request?</string>
+    <string name="collection_delete_title">Delete this collection?</string>
+    <string name="collection_delete_message">All requests in %1$s are deleted. This cannot be undone.</string>
+    <plurals name="saved_count">
+        <item quantity="one">%1$d saved request</item>
+        <item quantity="other">%1$d saved requests</item>
+    </plurals>
+
+    <string name="history_clear">Clear history</string>
+    <string name="history_clear_title">Clear history?</string>
+    <string name="history_clear_message">All history entries are deleted. This cannot be undone.</string>
+    <string name="history_clear_failed">Could not clear history</string>
+    <string name="history_empty">Sent requests appear here without bodies or auth values.</string>
+    <string name="history_loaded">Loaded. Values shown as *** must be entered again</string>
+    <plurals name="history_count">
+        <item quantity="one">%1$d entry</item>
+        <item quantity="other">%1$d entries</item>
+    </plurals>
+
+    <string name="environment_new">New environment</string>
+    <string name="environment_default_name">New environment</string>
+    <string name="environment_none">No environment</string>
+    <string name="environment_none_button">Environment: none</string>
+    <string name="environment_button">Environment: %1$s</string>
+    <string name="environment_note">Tap to use an environment. Long press to edit it. Variables are written as {{name}}.</string>
+    <string name="environment_title">Environment</string>
+    <string name="environment_name_hint">Environment name</string>
+    <string name="environment_variables">Variables</string>
+    <string name="environment_delete">Delete environment</string>
+    <string name="environment_delete_title">Delete this environment?</string>
+    <string name="environment_delete_message">Its variables are deleted. This cannot be undone.</string>
+    <string name="environment_unreadable">The variables could not be decrypted</string>
+    <string name="environment_save_failed">Could not save the environment</string>
+    <string name="variable_name">base_url</string>
+    <string name="variable_value">value</string>
+    <string name="variable_too_long">A variable is too long to save. Shorten it. Nothing is cut for you.</string>
+    <string name="variable_invalid">These names are ignored. Use letters, digits, _ . and - and start with a letter or _: %1$s</string>
+    <plurals name="environment_count">
+        <item quantity="one">%1$d environment</item>
+        <item quantity="other">%1$d environments</item>
+    </plurals>
+
+    <string name="response_empty">Send a request to see the response.</string>
+    <string name="copy_body">Copy body</string>
+    <string name="copy_headers">Copy headers</string>
+    <string name="label_status">Status</string>
+    <string name="label_time_size">Time · body size</string>
+    <string name="label_url">Final URL</string>
+    <string name="size_cut">%1$s read, the rest was not downloaded</string>
+    <string name="section_redirects">Redirects</string>
+    <string name="section_headers_closed">▸ Headers (%1$d), tap to show</string>
+    <string name="section_headers_open">▾ Headers (%1$d), tap to hide</string>
+    <string name="section_body">Body</string>
+    <string name="body_empty">The response has no body.</string>
+    <string name="body_binary">The body looks binary and is not shown.</string>
+    <string name="body_json">JSON, formatted for reading.</string>
+    <string name="body_cut">Body cut at the 2 MiB limit.</string>
+    <string name="tag_cut">CUT</string>
+    <string name="tag_success">SUCCESS</string>
+    <string name="tag_redirect">REDIRECT</string>
+    <string name="tag_client">CLIENT ERROR</string>
+    <string name="tag_server">SERVER ERROR</string>
+    <string name="tag_info">INFO</string>
+    <string name="tag_unknown">UNKNOWN</string>
+    <string name="tag_active">ACTIVE</string>
+</resources>
